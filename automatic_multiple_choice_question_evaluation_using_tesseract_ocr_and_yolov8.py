@@ -132,7 +132,7 @@ def xyxy2xywh(x):
 def predict_and_YOLO_bbx(image):
   copied_image = image.copy()
   labels = {0: "Cross", 1: "Fill", 2: "Strike", 3: "Tick"}
-  model = YOLO("/content/drive/MyDrive/YOLO_170img_150epoch_06Nov/train/weights/best.pt")
+  model = YOLO("path to the yolo trained model")
   results = model.predict(copied_image)
 
   selection=[]
